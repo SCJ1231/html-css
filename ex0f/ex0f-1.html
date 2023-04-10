@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상요소선택자</title>
+    <style>
+/*  after : 뒤 , before : 앞  띄어쓰기 적용된다. content 꼭 붙이기*/
+        p:first-child{
+            color: blue;
+        }
+        p:first-child:after{
+            content:" 창준"; color: green; 
+        }
+        p:before{content: "★ "}
+        p:nth-child(2){color: brown; background-color: 
+        yellow;display:inline;}
+        p:nth-child(4):after{content: " ★"}
+        p:nth-last-child(3):after{content: " 메로나"}
+        p:nth-last-child(2):after{content: " 감사합니다.~ ★"}
+        p:last-child:hover{background-color: aqua;}
+        
+    </style>
+</head>
+<body>
+    <p>나의 사랑</p>
+    <p>나의가족</p>
+    <p>행복미래</p>
+    <p>올 때</p>
+    <p>이제 끝</p>
+    <p>가나다라마바사</p>
+    
+    
+</body>
+</html>

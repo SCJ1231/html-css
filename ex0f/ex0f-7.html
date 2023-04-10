@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        :root{
+            --my1:#4a0692;
+            --my2:#9a70c6;
+            --my3:#9ea7a7;
+            --my4:#dac2d0;
+            --my5:#fde7f1;
+            --my6:#efefef;
+        }
+        div{
+             margin: 3px;
+            border:1px solid #ccc;
+            box-shadow: 2px 2px;
+        }
+        wrap{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px 100px;
+        }
+        .grid1{
+            background: var(--my1);
+            grid-column-start: 1;
+            grid-column-end: 4;   
+        }
+        .grid2{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        .grid3{}
+        .grid4{}
+        .grid5{}
+        .grid6{}
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="grid1">GRID1</div>
+        <div class="grid2">GRID2</div>
+        <div class="grid3">GRID3</div>
+        <div class="grid4">GRID4</div>
+        <div class="grid5">GRID5</div>
+        <div class="grid6">GRID6</div>
+    </div>
+</body>
+</html>

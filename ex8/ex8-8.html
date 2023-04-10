@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p 202 (가상선택자:nth-of-type)</title>
+    <style>
+
+        p:nth-of-type(2n+1){
+            color: red;
+        }
+        
+/*        odd : 홀수 , even : 짝수*/
+/*        nth 는 태그를 따지지 않고 전체에서 결정한다*/
+/*
+        p:nth-child(2n){
+            color: blue;
+        }
+*/
+/*        p:not(:nth-of-type(2)) not을 쓰면 해당을 제외하고 선택*/
+        
+    </style>
+</head>
+<body>
+    <div>여기는 카운트 세는 곳이 아님</div>
+    <p>1번째 p 태그</p>
+    <p>2번째 p 태그</p>
+    <div>여기는 카운트 세는 곳이 아님</div>
+    <p>3번째 p 태그</p>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p 222(이동)</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+        }
+        .container{
+            border: 4px solid tomato;
+            margin: 50px;
+        }
+        .transformed{
+            background-color: wheat;
+            border-radius: 10px;
+            transition: transform 1s linear;
+        }
+        .transformed:hover{
+/*            transform: translate(50px);*/
+/*            transform: translateX(50px);*/
+/*            transform: translateY(50px);*/
+/*            transform: translate(15px, -40px);*/
+            transform: translate(12px, 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="transformed">transformed</div>
+    </div>
+</body>
+</html>

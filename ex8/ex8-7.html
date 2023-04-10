@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p 200(가상클라스:ladt-child)</title>
+    <style>
+/*        두개 동시에 사용가능*/
+        p:last-child{
+            color: red;
+        }
+        p:first-child{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--    태그안에 순수히 같은 태그만 사용가능하다-->
+    <div>
+    <p>last-child 입니다.</p>
+    <p>last-child 가 아닙니다.</p>
+    <p>last-child 가 아닙니다.</p>
+    </div>
+    <div>
+    <p>last-child 입니다.</p>
+    <p>last-child 가 아닙니다.</p>
+    <h2>last-child 가 아닙니다.</h2>
+    </div>
+    
+    <div>
+        <p>first-child 입니다.</p>
+        <p>first-child 입니다.</p>
+        <p>first-child 입니다.</p>
+        <p>last-child 입니다.</p>
+    </div>
+</body>
+</html>
